@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html{
+    height: 100%;
+    background-image: url('./fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body{
+    font-size: 25px;
+    min-height: 100%;
+    
+}
+.grid-container > *{
+    box-shadow: -1px 1px 7px 0px rgba(37, 7, 7, 0.021);
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+}
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "header"
+    "navbar"
+    "main"
+    "sidebar"
+    "footer";
+}
+
+.header {
+    text-align: center;
+    background-image: url('');
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    text-shadow: 2px 2px rgba(238, 144, 152, 0.508);
+}
+.navbar {
+    grid-area: navbar;
+    background-color: rgba(238, 144, 152, 0.51);
+    margin-top: 150px;
+}
+.sidebar {
+    grid-area: sidebar;
+    background-color: rgba(238, 144, 152, 0.504);
+    margin-top: 150px;
+}
+.main {
+    font-size: 30px;
+    overflow: scroll;
+    grid-area: main;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.235);
+    margin-top: 200px;
+}
+.footer {
+    grid-area: footer;
+    background-color: rgb(238, 144, 177);
+}
+
+.imgredes{
+    width:100px;
+}
+
+
+
+
+@media (min-width:600px) {
+
+    .grid-container{
+        grid: gap 20px; ;
+        grid-template:
+        "header  header"100px
+        "navbar  navbar"auto
+        "sidebar main"auto
+        "footer  footer"70px/
+        200px    auto ;
+        overflow-y:scroll ;
+    }
+}
+@media (min-width:900px) {
+    .grid-container{
+        grid-template: 
+        "header header header"100px
+        "navbar main sidebar"auto
+        "footer footer footer" 90px/
+        150px     auto    300px;
+        overflow-x:scroll;
+
+    }
+    .navbar{
+        grid-area: navbar;
+        grid-template: 
+        "uno"    100px
+        "dos"    100px
+        "tres"   100px
+        "cuatro" 100px
+      grid-row-gap 20px  ;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
